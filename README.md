@@ -50,7 +50,7 @@ Real rows from a recent run: [`sample.json`](sample.json) · [`sample.csv`](samp
     "Ledamot"
   ],
   "fiscalYear": "2025",
-  "fetchedAt": "2026-11-10T08:10:09.560740Z"
+  "fetchedAt": "2026-11-10T20:38:46.596832Z"
 }
 ```
 
