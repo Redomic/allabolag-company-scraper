@@ -1,6 +1,6 @@
 # Allabolag Scraper: Swedish Company Data & Financials
 
-For prospecting, enrichment and monitoring: find Swedish companies and get flat rows with organisation number, SNI industry, employees, financials from the latest annual report (kSEK), equity ratio, and management/board role titles. Run by keyword, organisation number or URL, watch a list for new and changed companies, or follow the **newly registered companies feed** by industry and county for scheduled CRM/prospecting alerts.
+Find Swedish companies by keyword, organisation number or URL and get flat rows with organisation number, SNI industry, employees, legal-entity financials from the latest annual report (kSEK), equity ratio, and management/board role titles. You can sort search results server-side (for example `revenueDesc` for the biggest companies first), monitor a list for changes, or follow the newly registered companies feed.
 
 **Run it in the cloud, no setup:** [https://apify.com/redomic/allabolag-company-scraper](https://apify.com/redomic/allabolag-company-scraper). Works on Apify's free plan; about $3.00 per 1,000 results
 (less on paid plans). Schedules, API, webhooks and CSV/Excel/JSON export are built in.
@@ -10,6 +10,8 @@ For prospecting, enrichment and monitoring: find Swedish companies and get flat 
 - Account qualification (revenue, profit, headcount, industry, location)
 - Change monitoring on a schedule (new, changed or removed companies)
 - Newly formed company alerts by industry/county (SDRs, investors, accountants)
+
+Find Swedish companies by keyword, organisation number or URL and get flat rows with organisation number, SNI industry, employees, legal-entity financials from the latest annual report (kSEK), equity ratio, and management/board role titles. You can sort search results server-side (for example `revenueDesc` for the biggest companies first), monitor a list for changes, or follow the newly registered companies feed.
 
 ## Sample output
 Real rows from a recent run: [`sample.json`](sample.json) · [`sample.csv`](sample.csv)
