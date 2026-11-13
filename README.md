@@ -22,6 +22,8 @@ Real rows from a recent run: [`sample.json`](sample.json) · [`sample.csv`](samp
   "name": "Volvo Personvagnar Aktiebolag",
   "marketingProtection": false,
   "address": "Karossvägen 2",
+  "postalCode": "405 31",
+  "postPlace": "Göteborg",
   "municipality": "Göteborg",
   "county": "Västra Götaland",
   "industry": "29101 Tillverkning av personbilar och andra lätta motorfordon",
@@ -116,6 +118,11 @@ Real rows from a recent run: [`sample.json`](sample.json) · [`sample.csv`](samp
   ],
   "legalForm": "Aktiebolag",
   "companyFormCode": "Aktiebolag",
+  "parentCompanyName": "Volvo Car AB",
+  "parentCompanyOrgNumber": "5568108988",
+  "parentCompanyCountryCode": "SE",
+  "numberOfSubsidiaries": 64,
+  "numberOfCompaniesInGroup": 111,
   "status": "ACTIVE",
   "registeredDate": "1960-10-28",
   "ceo": "Verkställande direktör",
@@ -128,6 +135,8 @@ Real rows from a recent run: [`sample.json`](sample.json) · [`sample.csv`](samp
     "Ledamot",
     "Ledamot"
   ],
+  "revenueGrowthPct": -19.3,
+  "profitGrowthPct": -143.91,
   "fiscalYear": "2025",
   "accounts": [
     {
@@ -171,7 +180,7 @@ Real rows from a recent run: [`sample.json`](sample.json) · [`sample.csv`](samp
       "accountsScope": "legal_entity"
     }
   ],
-  "fetchedAt": "2026-11-11T18:56:24.348092Z"
+  "fetchedAt": "2026-11-13T21:13:37.886397Z"
 }
 ```
 
