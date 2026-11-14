@@ -162,7 +162,7 @@
         "accountsScope": "legal_entity"
       }
     ],
-    "fetchedAt": "2026-11-13T21:13:37.886397Z"
+    "fetchedAt": "2026-11-14T18:58:11.180749Z"
   },
   {
     "orgNumber": "5560139700",
@@ -326,7 +326,7 @@
         "accountsScope": "legal_entity"
       }
     ],
-    "fetchedAt": "2026-11-13T21:13:37.886397Z"
+    "fetchedAt": "2026-11-14T18:58:11.180749Z"
   },
   {
     "orgNumber": "5560219338",
@@ -485,7 +485,7 @@
         "accountsScope": "legal_entity"
       }
     ],
-    "fetchedAt": "2026-11-13T21:13:37.886397Z"
+    "fetchedAt": "2026-11-14T18:58:11.180749Z"
   },
   {
     "orgNumber": "5560000753",
@@ -632,7 +632,7 @@
         "accountsScope": "legal_entity"
       }
     ],
-    "fetchedAt": "2026-11-13T21:13:37.886397Z"
+    "fetchedAt": "2026-11-14T18:58:11.180749Z"
   },
   {
     "orgNumber": "5560343484",
@@ -775,6 +775,6 @@
         "accountsScope": "legal_entity"
       }
     ],
-    "fetchedAt": "2026-11-13T21:13:37.886397Z"
+    "fetchedAt": "2026-11-14T18:58:11.180749Z"
   }
 ]

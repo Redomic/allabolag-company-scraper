@@ -1,6 +1,6 @@
 # Allabolag Scraper: Swedish Company Data & Financials
 
-Find Swedish companies by keyword, organisation number or URL and get flat rows with organisation number, SNI industry, employees, legal-entity financials from the latest annual report (kSEK), equity ratio, and management/board role titles. You can sort search results server-side (for example `revenueDesc` for the biggest companies first), monitor a list for changes, or follow the newly registered companies feed.
+Find Swedish companies by keyword, organisation number or URL and get flat rows with organisation number, SNI industry, employees, legal-entity financials from the latest annual report (kSEK), equity ratio, and management/board role titles. You can list every company registered under an SNI industry code (`sniCodes`, e.g. `62.10` software or `69.201` accounting) in a county or municipality, sort results server-side (for example `revenueDesc` for the biggest companies first), monitor a list for changes, or follow the newly registered companies feed.
 
 **Run it in the cloud, no setup:** [https://apify.com/redomic/allabolag-company-scraper](https://apify.com/redomic/allabolag-company-scraper). Works on Apify's free plan; about $3.00 per 1,000 results
 (less on paid plans). Schedules, API, webhooks and CSV/Excel/JSON export are built in.
@@ -11,7 +11,7 @@ Find Swedish companies by keyword, organisation number or URL and get flat rows 
 - Change monitoring on a schedule (new, changed or removed companies)
 - Newly formed company alerts by industry/county (SDRs, investors, accountants)
 
-Find Swedish companies by keyword, organisation number or URL and get flat rows with organisation number, SNI industry, employees, legal-entity financials from the latest annual report (kSEK), equity ratio, and management/board role titles. You can sort search results server-side (for example `revenueDesc` for the biggest companies first), monitor a list for changes, or follow the newly registered companies feed.
+Find Swedish companies by keyword, organisation number or URL and get flat rows with organisation number, SNI industry, employees, legal-entity financials from the latest annual report (kSEK), equity ratio, and management/board role titles. You can list every company registered under an SNI industry code (`sniCodes`, e.g. `62.10` software or `69.201` accounting) in a county or municipality, sort results server-side (for example `revenueDesc` for the biggest companies first), monitor a list for changes, or follow the newly registered companies feed.
 
 ## Sample output
 Real rows from a recent run: [`sample.json`](sample.json) · [`sample.csv`](sample.csv)
@@ -180,7 +180,7 @@ Real rows from a recent run: [`sample.json`](sample.json) · [`sample.csv`](samp
       "accountsScope": "legal_entity"
     }
   ],
-  "fetchedAt": "2026-11-13T21:13:37.886397Z"
+  "fetchedAt": "2026-11-14T18:58:11.180749Z"
 }
 ```
 
@@ -191,7 +191,7 @@ Python ([apify-client](https://pypi.org/project/apify-client/)):
 from apify_client import ApifyClient
 
 client = ApifyClient("<YOUR_APIFY_TOKEN>")
-run = client.actor("redomic/allabolag-company-scraper").call(run_input={"query": "volvo"})
+run = client.actor("redomic/allabolag-company-scraper").call(run_input={"sniCodes": ["62.10"], "sort": "revenueDesc"})
 for item in client.dataset(run["defaultDatasetId"]).iterate_items():
     print(item)
 ```
@@ -201,7 +201,7 @@ curl (waits for the run and returns the rows):
 ```bash
 curl -X POST "https://api.apify.com/v2/acts/redomic~allabolag-company-scraper/run-sync-get-dataset-items?token=$APIFY_TOKEN" \
   -H "Content-Type: application/json" \
-  -d '{"query": "volvo"}'
+  -d '{"sniCodes": ["62.10"], "sort": "revenueDesc"}'
 ```
 
 ## All inputs, modes and pricing
