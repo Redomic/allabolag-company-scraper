@@ -100,11 +100,24 @@
     ],
     "legalForm": "Aktiebolag",
     "companyFormCode": "Aktiebolag",
+    "companyDescription": "Bolagets syfte är att erbjuda konsumenter frihet att färdas på ett personligt, hållbart och säkert sätt. För att uppnå detta syfte kommer bolaget både direkt och genom dotterbolag eller partnerskap utveckla, tillverka, marknadsföra och försälja bilar och erbjuda abonnemang på bilar och andra mobilitetstjänster för transport av människor och gods. Bolaget kommer även att bedriva annan verksamhet för att uppnå ovan syfte, både direkt och indirekt samt genom ägande i andra bolag.",
+    "estimatedTurnover": "> 10000000",
+    "turnoverYear": 2025,
+    "gazelle": false,
+    "mortgages": false,
     "parentCompanyName": "Volvo Car AB",
     "parentCompanyOrgNumber": "5568108988",
     "parentCompanyCountryCode": "SE",
     "numberOfSubsidiaries": 64,
     "numberOfCompaniesInGroup": 111,
+    "shareholders": [
+      {
+        "name": "Volvo Car AB",
+        "share": null,
+        "numberOfShares": 1,
+        "companyId": "5568108988"
+      }
+    ],
     "status": "ACTIVE",
     "registeredDate": "1960-10-28",
     "ceo": "Verkställande direktör",
@@ -162,7 +175,7 @@
         "accountsScope": "legal_entity"
       }
     ],
-    "fetchedAt": "2026-11-14T18:58:11.180749Z"
+    "fetchedAt": "2026-11-15T19:25:03.929021Z"
   },
   {
     "orgNumber": "5560139700",
@@ -264,11 +277,24 @@
     ],
     "legalForm": "Aktiebolag",
     "companyFormCode": "Aktiebolag",
+    "companyDescription": "Bolagets verksamhet skall avse att - självt eller genom innehav av aktier eller andelar i andra företag - bedriva forskning och utveckling, inköp, tillverkning och marknadsföring av motor- fordon, delar, tillbehör, reservdelar och tjänster därtill samt annan därmed förenlig rörelse. Bolaget skall även - självt eller genom innehav av aktier eller andelar i andra företag - äga och förvalta immateriella rättigheter samt bedriva därmed förenlig verksamhet.",
+    "estimatedTurnover": "> 10000000",
+    "turnoverYear": 2025,
+    "gazelle": false,
+    "mortgages": false,
     "parentCompanyName": "Aktiebolaget Volvo",
     "parentCompanyOrgNumber": "5560125790",
     "parentCompanyCountryCode": "SE",
     "numberOfSubsidiaries": 19,
     "numberOfCompaniesInGroup": 162,
+    "shareholders": [
+      {
+        "name": "Aktiebolaget Volvo",
+        "share": null,
+        "numberOfShares": 1,
+        "companyId": "5560125790"
+      }
+    ],
     "status": "ACTIVE",
     "registeredDate": "1917-01-15",
     "ceo": "Verkställande direktör",
@@ -326,7 +352,7 @@
         "accountsScope": "legal_entity"
       }
     ],
-    "fetchedAt": "2026-11-14T18:58:11.180749Z"
+    "fetchedAt": "2026-11-15T19:25:03.929021Z"
   },
   {
     "orgNumber": "5560219338",
@@ -423,6 +449,11 @@
     ],
     "legalForm": "Aktiebolag",
     "companyFormCode": "Aktiebolag",
+    "companyDescription": "Bolagets verksamhet skall avse fabriksrörelse och handel beträffande mekaniska verkstadsprodukter såsom entreprenad- och jordbruksmaskiner samt annan därmed förenlig verksamhet. En del av bolagets verksamhet skall härvid avse försäljning av skalmodeller av mekaniska verkstadsprodukter såsom entreprenad- och jordbruksmaskiner och liknande produkter.",
+    "estimatedTurnover": "> 10000000",
+    "turnoverYear": 2025,
+    "gazelle": false,
+    "mortgages": false,
     "parentCompanyName": "Aktiebolaget Volvo",
     "parentCompanyOrgNumber": "5560125790",
     "parentCompanyCountryCode": "SE",
@@ -485,7 +516,7 @@
         "accountsScope": "legal_entity"
       }
     ],
-    "fetchedAt": "2026-11-14T18:58:11.180749Z"
+    "fetchedAt": "2026-11-15T19:25:03.929021Z"
   },
   {
     "orgNumber": "5560000753",
@@ -570,6 +601,11 @@
     ],
     "legalForm": "Aktiebolag",
     "companyFormCode": "Aktiebolag",
+    "companyDescription": "Bolagets verksamhet skall avse att - självt eller genom innehav av aktier eller andelar i andra företag, bedriva utveckling, tillverkning och marknadsföring av mekaniska verkstadsprodukter samt annan därmed förenlig verksamhet.",
+    "estimatedTurnover": "> 10000000",
+    "turnoverYear": 2025,
+    "gazelle": false,
+    "mortgages": false,
     "parentCompanyName": "Aktiebolaget Volvo",
     "parentCompanyOrgNumber": "5560125790",
     "parentCompanyCountryCode": "SE",
@@ -632,7 +668,7 @@
         "accountsScope": "legal_entity"
       }
     ],
-    "fetchedAt": "2026-11-14T18:58:11.180749Z"
+    "fetchedAt": "2026-11-15T19:25:03.929021Z"
   },
   {
     "orgNumber": "5560343484",
@@ -713,6 +749,11 @@
     ],
     "legalForm": "Aktiebolag",
     "companyFormCode": "Aktiebolag",
+    "companyDescription": "Bolagets verksamhet skall avse att - självt eller genom innehav av aktier eller andelar i andra företag - driva handel med personvagnar och därtill hörande reservdelar och tillbehör samt därmed förenlig verksamhet i Sverige.",
+    "estimatedTurnover": "> 10000000",
+    "turnoverYear": 2025,
+    "gazelle": false,
+    "mortgages": false,
     "parentCompanyName": "Volvo Personvagnar Aktiebolag",
     "parentCompanyOrgNumber": "5560743089",
     "parentCompanyCountryCode": "SE",
@@ -775,6 +816,6 @@
         "accountsScope": "legal_entity"
       }
     ],
-    "fetchedAt": "2026-11-14T18:58:11.180749Z"
+    "fetchedAt": "2026-11-15T19:25:03.929021Z"
   }
 ]

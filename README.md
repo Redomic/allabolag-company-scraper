@@ -1,17 +1,24 @@
 # Allabolag Scraper: Swedish Company Data & Financials
 
-Find Swedish companies by keyword, organisation number or URL and get flat rows with organisation number, SNI industry, employees, legal-entity financials from the latest annual report (kSEK), equity ratio, and management/board role titles. You can list every company registered under an SNI industry code (`sniCodes`, e.g. `62.10` software or `69.201` accounting) in a county or municipality, sort results server-side (for example `revenueDesc` for the biggest companies first), monitor a list for changes, or follow the newly registered companies feed.
+Get Swedish companies from allabolag.se as a spreadsheet: organisation number, industry (SNI code), address, employees, revenue, profit, equity ratio, growth, CEO and board roles, and the tax and VAT registration status. Search by name or keyword, list every company in an industry and region, or follow the companies registered in Sweden this week.
 
-**Run it in the cloud, no setup:** [https://apify.com/redomic/allabolag-company-scraper](https://apify.com/redomic/allabolag-company-scraper). Works on Apify's free plan; about $3.00 per 1,000 results
+**Run it in the cloud, no setup:** [https://apify.com/redomic/allabolag-company-scraper](https://apify.com/redomic/allabolag-company-scraper). Works on Apify's free plan; about $0.40 per 1,000 results
 (less on paid plans). Schedules, API, webhooks and CSV/Excel/JSON export are built in.
 
 ## What you get
-- B2B prospecting and lead enrichment in Sweden (firmographics + financial size)
-- Account qualification (revenue, profit, headcount, industry, location)
-- Change monitoring on a schedule (new, changed or removed companies)
-- Newly formed company alerts by industry/county (SDRs, investors, accountants)
+Every company registered under SNI 62.10 (software development), sorted by revenue, on 15 November 2026:
 
-Find Swedish companies by keyword, organisation number or URL and get flat rows with organisation number, SNI industry, employees, legal-entity financials from the latest annual report (kSEK), equity ratio, and management/board role titles. You can list every company registered under an SNI industry code (`sniCodes`, e.g. `62.10` software or `69.201` accounting) in a county or municipality, sort results server-side (for example `revenueDesc` for the biggest companies first), monitor a list for changes, or follow the newly registered companies feed.
+| Company | Org number | City | Employees | Revenue (MSEK) | Profit (MSEK) | Equity ratio |
+|---|---|---|---|---|---|---|
+| Ericsson AB | 5560566258 | Stockholm | 13,052 | 134,244 | 19,602 | 49.6% |
+| IFS World Operations AB | 5560406042 | Linköping | 553 | 7,448 | 1,022 | 45.5% |
+| Tata Consultancy Services Sverige AB | 5565594008 | Stockholm | 211 | 5,567 | 405 | 60.5% |
+| Embark Studios AB | 5591723019 | Stockholm | 318 | 3,821 | 364 | 17.9% |
+| SAP Svenska AB | 5563229680 | Stockholm | 215 | 3,699 | 108 | 29.9% |
+| Nasdaq Technology AB | 5563148138 | Stockholm | 993 | 2,656 | 365 | 77.1% |
+| Consid AB | 5565994307 | Jönköping | 1,114 | 2,595 | 41 | 23.6% |
+
+Each row also carries the legal form, registration date, status, full address, county, SNI code and name, a company description, estimated turnover, turnover year, gazelle and mortgage flags, revenue and profit growth, share capital, F-tax, VAT and payroll registration, payment remarks, parent company, the CEO and chair, and the last few years of accounts. The figures come in kSEK, as allabolag shows them.
 
 ## Sample output
 Real rows from a recent run: [`sample.json`](sample.json) · [`sample.csv`](sample.csv)
@@ -118,11 +125,24 @@ Real rows from a recent run: [`sample.json`](sample.json) · [`sample.csv`](samp
   ],
   "legalForm": "Aktiebolag",
   "companyFormCode": "Aktiebolag",
+  "companyDescription": "Bolagets syfte är att erbjuda konsumenter frihet att färdas på ett personligt, hållbart och säkert sätt. För att uppnå detta syfte kommer bolaget både direkt och genom dotterbolag eller partnerskap utveckla, tillverka, marknadsföra och försälja bilar och erbjuda abonnemang på bilar och andra mobilitetstjänster för transport av människor och gods. Bolaget kommer även att bedriva annan verksamhet för att uppnå ovan syfte, både direkt och indirekt samt genom ägande i andra bolag.",
+  "estimatedTurnover": "> 10000000",
+  "turnoverYear": 2025,
+  "gazelle": false,
+  "mortgages": false,
   "parentCompanyName": "Volvo Car AB",
   "parentCompanyOrgNumber": "5568108988",
   "parentCompanyCountryCode": "SE",
   "numberOfSubsidiaries": 64,
   "numberOfCompaniesInGroup": 111,
+  "shareholders": [
+    {
+      "name": "Volvo Car AB",
+      "share": null,
+      "numberOfShares": 1,
+      "companyId": "5568108988"
+    }
+  ],
   "status": "ACTIVE",
   "registeredDate": "1960-10-28",
   "ceo": "Verkställande direktör",
@@ -180,7 +200,7 @@ Real rows from a recent run: [`sample.json`](sample.json) · [`sample.csv`](samp
       "accountsScope": "legal_entity"
     }
   ],
-  "fetchedAt": "2026-11-14T18:58:11.180749Z"
+  "fetchedAt": "2026-11-15T19:25:03.929021Z"
 }
 ```
 
