@@ -18,7 +18,6 @@
     "profitKSEK": -7276000,
     "accountsScope": "legal_entity",
     "url": "https://www.allabolag.se/5560743089",
-    "_source": "search",
     "equityRatio": 29.4,
     "fTaxRegistered": true,
     "fTaxDescription": "Ja, registrerad för F-skatt",
@@ -175,7 +174,7 @@
         "accountsScope": "legal_entity"
       }
     ],
-    "fetchedAt": "2026-11-15T19:25:03.929021Z"
+    "fetchedAt": "2026-11-16T19:08:29.866937Z"
   },
   {
     "orgNumber": "5560139700",
@@ -194,7 +193,6 @@
     "profitKSEK": 9301914,
     "accountsScope": "legal_entity",
     "url": "https://www.allabolag.se/5560139700",
-    "_source": "search",
     "equityRatio": 26.8,
     "fTaxRegistered": true,
     "fTaxDescription": "Ja, registrerad för F-skatt",
@@ -352,7 +350,7 @@
         "accountsScope": "legal_entity"
       }
     ],
-    "fetchedAt": "2026-11-15T19:25:03.929021Z"
+    "fetchedAt": "2026-11-16T19:08:29.866937Z"
   },
   {
     "orgNumber": "5560219338",
@@ -373,7 +371,6 @@
     "profitKSEK": 8136064,
     "accountsScope": "legal_entity",
     "url": "https://www.allabolag.se/5560219338",
-    "_source": "search",
     "equityRatio": 37,
     "fTaxRegistered": true,
     "fTaxDescription": "Ja, registrerad för F-skatt",
@@ -516,7 +513,7 @@
         "accountsScope": "legal_entity"
       }
     ],
-    "fetchedAt": "2026-11-15T19:25:03.929021Z"
+    "fetchedAt": "2026-11-16T19:08:29.866937Z"
   },
   {
     "orgNumber": "5560000753",
@@ -537,7 +534,6 @@
     "profitKSEK": 3002443,
     "accountsScope": "legal_entity",
     "url": "https://www.allabolag.se/5560000753",
-    "_source": "search",
     "equityRatio": 12.9,
     "fTaxRegistered": true,
     "fTaxDescription": "Ja, registrerad för F-skatt",
@@ -668,7 +664,7 @@
         "accountsScope": "legal_entity"
       }
     ],
-    "fetchedAt": "2026-11-15T19:25:03.929021Z"
+    "fetchedAt": "2026-11-16T19:08:29.866937Z"
   },
   {
     "orgNumber": "5560343484",
@@ -689,7 +685,6 @@
     "profitKSEK": 6946,
     "accountsScope": "legal_entity",
     "url": "https://www.allabolag.se/5560343484",
-    "_source": "search",
     "equityRatio": 45.5,
     "fTaxRegistered": true,
     "fTaxDescription": "Ja, registrerad för F-skatt",
@@ -816,6 +811,6 @@
         "accountsScope": "legal_entity"
       }
     ],
-    "fetchedAt": "2026-11-15T19:25:03.929021Z"
+    "fetchedAt": "2026-11-16T19:08:29.866937Z"
   }
 ]

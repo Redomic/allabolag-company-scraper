@@ -43,7 +43,6 @@ Real rows from a recent run: [`sample.json`](sample.json) · [`sample.csv`](samp
   "profitKSEK": -7276000,
   "accountsScope": "legal_entity",
   "url": "https://www.allabolag.se/5560743089",
-  "_source": "search",
   "equityRatio": 29.4,
   "fTaxRegistered": true,
   "fTaxDescription": "Ja, registrerad för F-skatt",
@@ -200,7 +199,7 @@ Real rows from a recent run: [`sample.json`](sample.json) · [`sample.csv`](samp
       "accountsScope": "legal_entity"
     }
   ],
-  "fetchedAt": "2026-11-15T19:25:03.929021Z"
+  "fetchedAt": "2026-11-16T19:08:29.866937Z"
 }
 ```
 
