@@ -34,209 +34,228 @@ Rows also carry `industries`: every SNI industry branch the company is registere
 ]
 ```
 
+Buyers who need a named contact on the board get `boardMembers`: the publicly registered members and managing director with their role titles, rather than titles alone. For Ericsson AB (org 5560566258) a detail run returns:
+
+```json
+"boardMembers": [
+  { "name": "Magnus Gustav Nordéus", "role": "Ordförande" },
+  { "name": "Bethlehem Andersson", "role": "Ledamot" },
+  { "name": "Hanna Kristina Bäckgren", "role": "Ledamot" }
+]
+```
+
+Protected names are left out, and no personal identity numbers, birth dates or private contact details are stored. The field comes from the company page, so rows without a fetched page or a published board leave it out. A scheduled monitor run reports a changed board as a change to that company.
+
 ## Sample output
 Real rows from a recent run: [`sample.json`](sample.json) · [`sample.csv`](sample.csv)
 
 ```json
 {
-  "orgNumber": "5567679849",
-  "name": "SWECO Sverige AB",
+  "orgNumber": "5560743089",
+  "name": "Volvo Personvagnar Aktiebolag",
   "marketingProtection": false,
-  "address": "Gjörwellsgatan 22",
-  "postalCode": "100 26",
-  "postPlace": "Stockholm",
-  "municipality": "Stockholm",
-  "county": "Stockholm",
-  "industry": "71121 Teknisk konsultverksamhet inom bygg- och anläggningsteknik",
-  "sniCode": "71121",
-  "sniName": "Teknisk konsultverksamhet inom bygg- och anläggningsteknik",
-  "latitude": 59.3280736571709,
-  "longitude": 18.0180503351969,
-  "employees": 6303,
-  "revenueKSEK": 9156670,
-  "profitKSEK": 970930,
+  "address": "Karossvägen 2",
+  "postalCode": "405 31",
+  "postPlace": "Göteborg",
+  "municipality": "Göteborg",
+  "county": "Västra Götaland",
+  "industry": "29101 Tillverkning av personbilar och andra lätta motorfordon",
+  "sniCode": "29101",
+  "sniName": "Tillverkning av personbilar och andra lätta motorfordon",
+  "latitude": 57.72335174,
+  "longitude": 11.84670026,
+  "employees": 20190,
+  "revenueKSEK": 244217000,
+  "profitKSEK": -7276000,
   "accountsScope": "legal_entity",
-  "url": "https://www.allabolag.se/5567679849",
-  "equityRatio": 45.2,
+  "url": "https://www.allabolag.se/5560743089",
+  "equityRatio": 29.4,
   "fTaxRegistered": true,
   "fTaxDescription": "Ja, registrerad för F-skatt",
   "vatRegistered": true,
   "payrollTaxRegistered": true,
-  "shareCapitalKSEK": 129200,
+  "shareCapitalKSEK": 724889,
   "paymentRemarks": false,
   "announcements": [
     {
-      "id": "b08d5e98cc8c3c36849b1e1bdf68a806cf68b645",
-      "date": "21.10.2026",
-      "text": "Särskilt företagsnamn",
-      "type": "SECONDARY_BUSINESS_NAME"
+      "id": "990e3f217e62af71a3232d24e5e2d99226914d19",
+      "date": "23.09.2026",
+      "text": "Adress",
+      "type": "CONTACT_ADDRESS"
     },
     {
-      "id": "636fc0e519003b05fd96f7c82c9bb1feb232a84e",
-      "date": "21.10.2026",
-      "text": "Särskilt företagsnamn",
-      "type": "SECONDARY_BUSINESS_NAME"
+      "id": "902c8d6dcaffc3fa9fc5f214483d66379de6a07b",
+      "date": "28.05.2026",
+      "text": "Årsredovisning",
+      "type": "REGISTERED_ANNUAL_REPORT"
     },
     {
-      "id": "6f0e9beeb27ff7cd7c81e58c08d2788de31b3ca3",
-      "date": "21.10.2026",
-      "text": "Särskilt företagsnamn",
-      "type": "SECONDARY_BUSINESS_NAME"
+      "id": "8b20ad2ecaf8ed3612a140ced6d6d22fc698ffce",
+      "date": "26.02.2026",
+      "text": "Bransch",
+      "type": "INDUSTRY"
     },
     {
-      "id": "79a86584b95090592f6b034c494ab3131095f486",
-      "date": "21.10.2026",
-      "text": "Särskilt företagsnamn",
-      "type": "SECONDARY_BUSINESS_NAME"
+      "id": "6b8f2fc19d44e1cdc975f9f60709a45f6a0af270",
+      "date": "01.12.2025",
+      "text": "Bransch",
+      "type": "INDUSTRY"
     },
     {
-      "id": "567ddc6f409ae621bd24b58f74ff25896b16cf03",
-      "date": "21.10.2026",
-      "text": "Särskilt företagsnamn",
-      "type": "SECONDARY_BUSINESS_NAME"
+      "id": "7510109e01bd8e5d91aafd863bae5ed88bbcf522",
+      "date": "05.11.2025",
+      "text": "Fusion övertagande företag",
+      "type": "MERGER_EATER"
     },
     {
-      "id": "b37cf17f5f7052d1d0417e86a12dcac5a710165d",
-      "date": "21.10.2026",
-      "text": "Särskilt företagsnamn",
-      "type": "SECONDARY_BUSINESS_NAME"
+      "id": "203d2db19797fee668444672ab3b24b0e537a4e4",
+      "date": "29.08.2025",
+      "text": "Fusion övertagande företag",
+      "type": "MERGER_EATER"
     },
     {
-      "id": "6f60593aa17b40d68428271dbafce979a1807afe",
-      "date": "21.10.2026",
-      "text": "Särskilt företagsnamn",
-      "type": "SECONDARY_BUSINESS_NAME"
+      "id": "2ca465d73347c223d2b9628f723d217b275d274b",
+      "date": "17.05.2025",
+      "text": "Årsredovisning",
+      "type": "REGISTERED_ANNUAL_REPORT"
     },
     {
-      "id": "0de6ee71762a6ab003e0139031a6a5183e0baa1a",
-      "date": "21.10.2026",
-      "text": "Särskilt företagsnamn",
-      "type": "SECONDARY_BUSINESS_NAME"
+      "id": "ade8bea35728215f0287a25fc9d7d554843050ad",
+      "date": "14.05.2025",
+      "text": "Fusion övertagande företag",
+      "type": "MERGER_EATER"
     },
     {
-      "id": "e8ebd9c3c70635bc0f84013a3834eb3c56d65e99",
-      "date": "21.10.2026",
-      "text": "Särskilt företagsnamn",
-      "type": "SECONDARY_BUSINESS_NAME"
+      "id": "cf9b8c0678975bbe296379586299cec257ec8f97",
+      "date": "06.05.2025",
+      "text": "Firmatecknare",
+      "type": "SIGNATORY"
     },
     {
-      "id": "49933ead3a70e8eebd747d630ea1ea097101b108",
-      "date": "21.10.2026",
-      "text": "Särskilt företagsnamn",
-      "type": "SECONDARY_BUSINESS_NAME"
+      "id": "a5c0695aa3547d6ef03296e05ebdfaaf2cf1c171",
+      "date": "29.04.2025",
+      "text": "Firmatecknare",
+      "type": "SIGNATORY"
     }
   ],
   "signatories": [
     "Firman tecknas av styrelsen",
     "Firman tecknas två i förening av",
-    "Allde, Jan Lennart",
-    "Bergman, Åsa Anna Maria",
-    "Wallner, Sture Fredrik",
-    "Firman tecknas av en av",
-    "Axby, Per Fredrik",
-    "Bergström Sahlin, Ulla Elisabet",
-    "Graveus, Frank",
-    "Lindqvist, Torsten Magnus",
-    "Norén, Mats Johan Gunnar",
-    "Rosén, Anna Kajsa",
-    "i",
-    "förening med en av",
-    "Allde, Jan Lennart",
-    "Bergman, Åsa Anna Maria",
-    "Karlsson, Lars Magnus Gunnar",
-    "Wallner, Sture Fredrik",
+    "Fager, Hanna Viola",
+    "Hansson, Karl Fredrik",
+    "Hu, Yanhang",
+    "Samuelsson, Håkan",
     "Dessutom har verkställande direktören rätt att teckna firman",
     "beträffande löpande förvaltningsåtgärder"
   ],
   "legalForm": "Aktiebolag",
   "companyFormCode": "Aktiebolag",
   "industries": [
-    "71121 Teknisk konsultverksamhet inom bygg- och anläggningsteknik",
-    "71124 Teknisk konsultverksamhet inom energi-, miljö- och VVS-teknik",
-    "71123 Teknisk konsultverksamhet inom elteknik",
-    "71110 Arkitektverksamhet",
-    "71129 Övrig teknisk konsultverksamhet",
-    "63100 Datainfrastruktur, databehandling, hosting o.d.",
-    "71122 Teknisk konsultverksamhet inom industriteknik"
+    "29101 Tillverkning av personbilar och andra lätta motorfordon",
+    "29200 Tillverkning av karosserier för motorfordon; tillverkning av släpfordon och påhängsvagnar",
+    "46720 Partihandel med reservdelar och tillbehör till motorfordon",
+    "27110 Tillverkning av elmotorer, generatorer och transformatorer",
+    "72109 Annan naturvetenskaplig och teknisk forskning och utveckling",
+    "38214 Återvinning av källsorterat material",
+    "71200 Teknisk provning och analys",
+    "62100 Dataprogrammering",
+    "70100 Verksamheter som utövas av huvudkontor",
+    "29320 Tillverkning av andra delar och tillbehör till motorfordon"
   ],
-  "companyDescription": "Bolaget ska, direkt eller indirekt genom hel- eller delägda bolag, bedriva konsultverksamhet inom områdena järnväg och annan spårbunden trafik, trafik- och transport i övrigt, arkitektur, anläggningsteknik, bygg- och byggnadsteknik och byggplanering, energisystem, el- och värmeteknik, telekommunikation, luft-, vatten-, mark-, och miljöteknik, maskinteknik, industriell process- och produktionsteknik, brandteknik, säkerhet, tekniska installationer inom VVS, el, tele och automation, näringspolitik och st= rukturomvandling, ekonomi, organisations- och personalutveckling samt leverera tjänster och produkter inom området geografiska och andra informationssystem samt bedriva därmed förenling verksamhet.",
-  "estimatedTurnover": "5000000 - 9999999",
+  "companyDescription": "Bolagets syfte är att erbjuda konsumenter frihet att färdas på ett personligt, hållbart och säkert sätt. För att uppnå detta syfte kommer bolaget både direkt och genom dotterbolag eller partnerskap utveckla, tillverka, marknadsföra och försälja bilar och erbjuda abonnemang på bilar och andra mobilitetstjänster för transport av människor och gods. Bolaget kommer även att bedriva annan verksamhet för att uppnå ovan syfte, både direkt och indirekt samt genom ägande i andra bolag.",
+  "estimatedTurnover": "> 10000000",
   "turnoverYear": 2025,
   "gazelle": false,
   "mortgages": false,
-  "parentCompanyName": "SWECO Sverige Holding AB",
-  "parentCompanyOrgNumber": "5560322496",
+  "parentCompanyName": "Volvo Car AB",
+  "parentCompanyOrgNumber": "5568108988",
   "parentCompanyCountryCode": "SE",
-  "numberOfSubsidiaries": 1,
-  "numberOfCompaniesInGroup": 21,
+  "numberOfSubsidiaries": 64,
+  "numberOfCompaniesInGroup": 111,
   "shareholders": [
     {
-      "name": "SWECO Sverige Holding AB",
+      "name": "Volvo Car AB",
       "share": null,
       "numberOfShares": 1,
-      "companyId": "5560322496"
+      "companyId": "5568108988"
     }
   ],
   "status": "ACTIVE",
-  "registeredDate": "2008-10-22",
+  "registeredDate": "1960-10-28",
   "ceo": "Verkställande direktör",
   "ceoTitle": "Verkställande direktör",
-  "ceoName": "Sture Fredrik Wallner",
-  "chairmanName": "Åsa Anna Maria Bergman",
+  "ceoName": "Håkan Samuelsson",
+  "chairmanName": "Håkan Samuelsson",
   "boardTitles": [
     "Ordförande",
     "Ledamot",
     "Ledamot",
-    "Ledamot",
-    "Ledamot",
-    "Ledamot",
-    "Ledamot",
-    "Suppleant",
-    "Suppleant",
-    "Suppleant"
+    "Ledamot"
   ],
-  "revenueGrowthPct": -1.37,
-  "profitGrowthPct": 213.93,
+  "boardMembers": [
+    {
+      "name": "Håkan Samuelsson",
+      "role": "Verkställande direktör"
+    },
+    {
+      "name": "Håkan Samuelsson",
+      "role": "Ordförande"
+    },
+    {
+      "name": "Karl Fredrik Hansson",
+      "role": "Ledamot"
+    },
+    {
+      "name": "Yanhang Hu",
+      "role": "Ledamot"
+    },
+    {
+      "name": "Håkan Samuelsson",
+      "role": "Ledamot"
+    }
+  ],
+  "revenueGrowthPct": -19.3,
+  "profitGrowthPct": -143.91,
   "fiscalYear": "2025",
   "accounts": [
     {
       "fiscalYear": "2025",
-      "revenueKSEK": 9156670,
-      "profitKSEK": 49005,
-      "equityRatio": 45.2,
-      "employees": 6303,
+      "revenueKSEK": 244217000,
+      "profitKSEK": -7843000,
+      "equityRatio": 29.4,
+      "employees": 20190,
       "accountsScope": "legal_entity"
     },
     {
       "fiscalYear": "2024",
-      "revenueKSEK": 9283431,
-      "profitKSEK": 15610,
-      "equityRatio": 41.4,
-      "employees": 6347,
+      "revenueKSEK": 302609000,
+      "profitKSEK": 17862000,
+      "equityRatio": 30.8,
+      "employees": 19317,
       "accountsScope": "legal_entity"
     },
     {
       "fiscalYear": "2023",
-      "revenueKSEK": 8585455,
-      "profitKSEK": 204190,
-      "equityRatio": 39.4,
-      "employees": 6193,
+      "revenueKSEK": 300276000,
+      "profitKSEK": 13443000,
+      "equityRatio": 25.9,
+      "employees": 19340,
       "accountsScope": "legal_entity"
     },
     {
       "fiscalYear": "2022",
-      "revenueKSEK": 7967780,
-      "profitKSEK": 109,
-      "equityRatio": 35.1,
-      "employees": 5823,
+      "revenueKSEK": 215905000,
+      "profitKSEK": 5256000,
+      "equityRatio": 23.1,
+      "employees": 18858,
       "accountsScope": "legal_entity"
     },
     {
       "fiscalYear": "2021",
-      "revenueKSEK": 7599145,
-      "profitKSEK": 1738,
-      "equityRatio": 37.8,
-      "employees": 5706,
+      "revenueKSEK": 203205000,
+      "profitKSEK": 8050000,
+      "equityRatio": 20.1,
+      "employees": 17936,
       "accountsScope": "legal_entity"
     }
   ],
@@ -249,7 +268,7 @@ Real rows from a recent run: [`sample.json`](sample.json) · [`sample.csv`](samp
       "items": [
         {
           "code": "ADI",
-          "amount": 1717
+          "amount": 195000
         },
         {
           "code": "ADK",
@@ -257,139 +276,135 @@ Real rows from a recent run: [`sample.json`](sample.json) · [`sample.csv`](samp
         },
         {
           "code": "ADR",
-          "amount": 1717
+          "amount": 195000
         },
         {
           "code": "AK",
-          "amount": 129200
+          "amount": 725000
         },
         {
           "code": "ANT",
-          "amount": 6303
+          "amount": 20190
         },
         {
           "code": "avk_eget_kapital",
-          "amount": 58.5
+          "amount": -12.4
         },
         {
           "code": "avk_totalt_kapital",
-          "amount": 26.5
+          "amount": -2.3
         },
         {
           "code": "RPE",
-          "amount": 1453
+          "amount": 12096
         },
         {
           "code": "CPE",
-          "amount": 949
+          "amount": 1078
         },
         {
           "code": "DR",
-          "amount": 49005
-        },
-        {
-          "code": "EK",
-          "amount": -84889
+          "amount": -7843000
         },
         {
           "code": "EKA",
-          "amount": 45.2
+          "amount": 29.4
         },
         {
           "code": "FI",
-          "amount": 32935
+          "amount": 3026000
         },
         {
           "code": "FK",
-          "amount": -472
+          "amount": -2606000
         },
         {
           "code": "GG",
-          "amount": 1.21
+          "amount": 2.4
         },
         {
           "code": "KBP",
-          "amount": 18627
+          "amount": 48526000
         },
         {
           "code": "LG",
-          "amount": 197841
+          "amount": 21153000
         },
         {
           "code": "loner_ovriga",
-          "amount": 4026119
+          "amount": 14296000
         },
         {
           "code": "loner_styrelse_vd",
-          "amount": 5508
+          "amount": 118000
         },
         {
           "code": "ORS",
-          "amount": 67660
+          "amount": -7276000
         },
         {
           "code": "resultat_e_avskrivningar",
-          "amount": 938467
+          "amount": -7696000
         },
         {
           "code": "resultat_e_finansnetto",
-          "amount": 970930
+          "amount": -7276000
         },
         {
           "code": "RG",
-          "amount": 151.9
+          "amount": 89.3
         },
         {
           "code": "SAP",
-          "amount": 92284
+          "amount": 9778000
         },
         {
           "code": "SDI",
-          "amount": 9156670
+          "amount": 244217000
         },
         {
           "code": "SED",
-          "amount": 3669789
+          "amount": 199998000
         },
         {
           "code": "SI",
-          "amount": 9154953
+          "amount": 244022000
         },
         {
           "code": "SEK",
-          "amount": 1644071
+          "amount": 58856000
         },
         {
           "code": "SF",
-          "amount": 1384486
+          "amount": 4461000
         },
         {
           "code": "SFA",
-          "amount": 760201
+          "amount": 97924000
         },
         {
           "code": "SGE",
-          "amount": 3669789
+          "amount": 199998000
         },
         {
           "code": "SIA",
-          "amount": 57765
+          "amount": 6429000
         },
         {
           "code": "SIK",
-          "amount": 1495138
+          "amount": 57835000
         },
         {
           "code": "SKG",
-          "amount": 1914912
+          "amount": 101976000
         },
         {
           "code": "SKGKI",
-          "amount": 0
+          "amount": 451000
         },
         {
           "code": "SKO",
-          "amount": -18655
+          "amount": -567000
         },
         {
           "code": "SLG",
@@ -397,7 +412,7 @@ Real rows from a recent run: [`sample.json`](sample.json) · [`sample.csv`](samp
         },
         {
           "code": "SOM",
-          "amount": 2909588
+          "amount": 102074000
         },
         {
           "code": "SUB",
@@ -405,38 +420,34 @@ Real rows from a recent run: [`sample.json`](sample.json) · [`sample.csv`](samp
         },
         {
           "code": "summa_finansiella_anltillg",
-          "amount": 564849
+          "amount": 73553000
         },
         {
           "code": "summa_langfristiga_skulder",
-          "amount": 0
+          "amount": 29388000
         },
         {
           "code": "summa_rorelsekostnader",
-          "amount": -8218202
+          "amount": -251913000
         },
         {
           "code": "SV",
-          "amount": 1330
+          "amount": 11029000
         },
         {
           "code": "SVD",
-          "amount": 137587
+          "amount": 17942000
         },
         {
           "code": "UTR",
-          "amount": 18522
-        },
-        {
-          "code": "FSD",
-          "amount": -903271
-        },
-        {
-          "code": "KB",
           "amount": 0
         },
         {
-          "code": "AWA",
+          "code": "FSD",
+          "amount": 0
+        },
+        {
+          "code": "KB",
           "amount": 0
         },
         {
@@ -444,16 +455,12 @@ Real rows from a recent run: [`sample.json`](sample.json) · [`sample.csv`](samp
           "amount": 0
         },
         {
-          "code": "BE",
-          "amount": 0
-        },
-        {
           "code": "TR",
-          "amount": 10.6
+          "amount": -1.9
         },
         {
           "code": "EBITDA",
-          "amount": 1023356
+          "amount": -7696000
         }
       ]
     },
@@ -465,155 +472,151 @@ Real rows from a recent run: [`sample.json`](sample.json) · [`sample.csv`](samp
       "items": [
         {
           "code": "ADI",
-          "amount": 1126
+          "amount": 17507000
         },
         {
           "code": "ADK",
-          "amount": 0
+          "amount": -371000
         },
         {
           "code": "ADR",
-          "amount": 1126
+          "amount": 17507000
         },
         {
           "code": "AK",
-          "amount": 129200
+          "amount": 725000
         },
         {
           "code": "ANT",
-          "amount": 6347
+          "amount": 19317
         },
         {
           "code": "avk_eget_kapital",
-          "amount": 66.1
+          "amount": 31.9
         },
         {
           "code": "avk_totalt_kapital",
-          "amount": 27.4
+          "amount": 11.7
         },
         {
           "code": "RPE",
-          "amount": 1463
+          "amount": 15665
         },
         {
           "code": "CPE",
-          "amount": 929
+          "amount": 1105
         },
         {
           "code": "DR",
-          "amount": 15610
-        },
-        {
-          "code": "EK",
-          "amount": -89057
+          "amount": 17862000
         },
         {
           "code": "EKA",
-          "amount": 41.4
+          "amount": 30.8
         },
         {
           "code": "FI",
-          "amount": 59375
+          "amount": 3740000
         },
         {
           "code": "FK",
-          "amount": -441
+          "amount": -3646000
         },
         {
           "code": "GG",
-          "amount": 1.42
+          "amount": 2.25
         },
         {
           "code": "KBP",
-          "amount": 31317
+          "amount": 39701000
         },
         {
           "code": "LG",
-          "amount": 176771
+          "amount": 24832000
         },
         {
           "code": "loner_ovriga",
-          "amount": 3949149
+          "amount": 14503000
         },
         {
           "code": "loner_styrelse_vd",
-          "amount": 4891
+          "amount": 128000
         },
         {
           "code": "ORS",
-          "amount": 32761
+          "amount": 18759000
         },
         {
           "code": "resultat_e_avskrivningar",
-          "amount": 1000580
+          "amount": 18665000
         },
         {
           "code": "resultat_e_finansnetto",
-          "amount": 1059513
+          "amount": 18759000
         },
         {
           "code": "RG",
-          "amount": 166.1
+          "amount": 84.4
         },
         {
           "code": "SAP",
-          "amount": 92902
+          "amount": 10178000
         },
         {
           "code": "SDI",
-          "amount": 9283431
+          "amount": 302609000
         },
         {
           "code": "SED",
-          "amount": 3872296
+          "amount": 190958000
         },
         {
           "code": "SI",
-          "amount": 9282305
+          "amount": 285102000
         },
         {
           "code": "SEK",
-          "amount": 1589802
+          "amount": 58766000
         },
         {
           "code": "SF",
-          "amount": 1362595
+          "amount": 4148000
         },
         {
           "code": "SFA",
-          "amount": 258589
+          "amount": 99366000
         },
         {
           "code": "SGE",
-          "amount": 3872296
+          "amount": 190958000
         },
         {
           "code": "SIA",
-          "amount": 86264
+          "amount": 6898000
         },
         {
           "code": "SIK",
-          "amount": 1440869
+          "amount": 57745000
         },
         {
           "code": "SKG",
-          "amount": 2174170
+          "amount": 98208000
         },
         {
           "code": "SKGKI",
-          "amount": 0
+          "amount": 664000
         },
         {
           "code": "SKO",
-          "amount": -17151
+          "amount": -897000
         },
         {
           "code": "SLG",
-          "amount": 0
+          "amount": 569000
         },
         {
           "code": "SOM",
-          "amount": 3613706
+          "amount": 91592000
         },
         {
           "code": "SUB",
@@ -621,38 +624,34 @@ Real rows from a recent run: [`sample.json`](sample.json) · [`sample.csv`](samp
         },
         {
           "code": "summa_finansiella_anltillg",
-          "amount": 37106
+          "amount": 77171000
         },
         {
           "code": "summa_langfristiga_skulder",
-          "amount": 0
+          "amount": 23806000
         },
         {
           "code": "summa_rorelsekostnader",
-          "amount": -8282852
+          "amount": -283944000
         },
         {
           "code": "SV",
-          "amount": 2074
+          "amount": 8663000
         },
         {
           "code": "SVD",
-          "amount": 135220
+          "amount": 15297000
         },
         {
           "code": "UTR",
-          "amount": 15422
+          "amount": 0
         },
         {
           "code": "FSD",
-          "amount": 3248
+          "amount": 0
         },
         {
           "code": "KB",
-          "amount": -1030000
-        },
-        {
-          "code": "AWA",
           "amount": 0
         },
         {
@@ -660,16 +659,12 @@ Real rows from a recent run: [`sample.json`](sample.json) · [`sample.csv`](samp
           "amount": 0
         },
         {
-          "code": "BE",
-          "amount": 0
-        },
-        {
           "code": "TR",
-          "amount": 11.4
+          "amount": 7.4
         },
         {
           "code": "EBITDA",
-          "amount": 1089637
+          "amount": 18665000
         }
       ]
     },
@@ -681,7 +676,7 @@ Real rows from a recent run: [`sample.json`](sample.json) · [`sample.csv`](samp
       "items": [
         {
           "code": "ADI",
-          "amount": 1160
+          "amount": 10998000
         },
         {
           "code": "ADK",
@@ -689,139 +684,135 @@ Real rows from a recent run: [`sample.json`](sample.json) · [`sample.csv`](samp
         },
         {
           "code": "ADR",
-          "amount": 1160
+          "amount": 10998000
         },
         {
           "code": "AK",
-          "amount": 129200
+          "amount": 725000
         },
         {
           "code": "ANT",
-          "amount": 6193
+          "amount": 19340
         },
         {
           "code": "avk_eget_kapital",
-          "amount": 77
+          "amount": 28.3
         },
         {
           "code": "avk_totalt_kapital",
-          "amount": 30.3
+          "amount": 8.7
         },
         {
           "code": "RPE",
-          "amount": 1386
+          "amount": 15526
         },
         {
           "code": "CPE",
-          "amount": 888
+          "amount": 1137
         },
         {
           "code": "DR",
-          "amount": 204190
-        },
-        {
-          "code": "EK",
-          "amount": -83291
+          "amount": 13443000
         },
         {
           "code": "EKA",
-          "amount": 39.4
+          "amount": 25.9
         },
         {
           "code": "FI",
-          "amount": 50393
+          "amount": 5206000
         },
         {
           "code": "FK",
-          "amount": -535
+          "amount": -2753000
         },
         {
           "code": "GG",
-          "amount": 1.54
+          "amount": 2.86
         },
         {
           "code": "KBP",
-          "amount": 24274
+          "amount": 32163000
         },
         {
           "code": "LG",
-          "amount": 221330
+          "amount": 29041000
         },
         {
           "code": "loner_ovriga",
-          "amount": 3683962
+          "amount": 14762000
         },
         {
           "code": "loner_styrelse_vd",
-          "amount": 4595
+          "amount": 99000
         },
         {
           "code": "ORS",
-          "amount": 269758
+          "amount": 14618000
         },
         {
           "code": "resultat_e_avskrivningar",
-          "amount": 920494
+          "amount": 12165000
         },
         {
           "code": "resultat_e_finansnetto",
-          "amount": 970353
+          "amount": 14618000
         },
         {
           "code": "RG",
-          "amount": 150.2
+          "amount": 77.1
         },
         {
           "code": "SAP",
-          "amount": 8123
+          "amount": 12162000
         },
         {
           "code": "SDI",
-          "amount": 8585455
+          "amount": 300276000
         },
         {
           "code": "SED",
-          "amount": 3199535
+          "amount": 199590000
         },
         {
           "code": "SI",
-          "amount": 8584295
+          "amount": 289278000
         },
         {
           "code": "SEK",
-          "amount": 1245183
+          "amount": 51657000
         },
         {
           "code": "SF",
-          "amount": 1376599
+          "amount": 3512000
         },
         {
           "code": "SFA",
-          "amount": 301561
+          "amount": 100735000
         },
         {
           "code": "SGE",
-          "amount": 3199535
+          "amount": 199590000
         },
         {
           "code": "SIA",
-          "amount": 100077
+          "amount": 7553000
         },
         {
           "code": "SIK",
-          "amount": 1096250
+          "amount": 50636000
         },
         {
           "code": "SKG",
-          "amount": 1927559
+          "amount": 112980000
         },
         {
           "code": "SKGKI",
-          "amount": 0
+          "amount": 657000
         },
         {
           "code": "SKO",
-          "amount": -65568
+          "amount": -1175000
         },
         {
           "code": "SLG",
@@ -829,7 +820,7 @@ Real rows from a recent run: [`sample.json`](sample.json) · [`sample.csv`](samp
         },
         {
           "code": "SOM",
-          "amount": 2897973
+          "amount": 98855000
         },
         {
           "code": "SUB",
@@ -837,38 +828,34 @@ Real rows from a recent run: [`sample.json`](sample.json) · [`sample.csv`](samp
         },
         {
           "code": "summa_finansiella_anltillg",
-          "amount": 62715
+          "amount": 80615000
         },
         {
           "code": "summa_langfristiga_skulder",
-          "amount": 0
+          "amount": 22791000
         },
         {
           "code": "summa_rorelsekostnader",
-          "amount": -7664961
+          "amount": -288111000
         },
         {
           "code": "SV",
-          "amount": 2266
+          "amount": 11752000
         },
         {
           "code": "SVD",
-          "amount": 138769
+          "amount": 12567000
         },
         {
           "code": "UTR",
-          "amount": 18670
+          "amount": 0
         },
         {
           "code": "FSD",
-          "amount": -595
+          "amount": 0
         },
         {
           "code": "KB",
-          "amount": -700000
-        },
-        {
-          "code": "AWA",
           "amount": 0
         },
         {
@@ -876,16 +863,12 @@ Real rows from a recent run: [`sample.json`](sample.json) · [`sample.csv`](samp
           "amount": 0
         },
         {
-          "code": "BE",
-          "amount": 0
-        },
-        {
           "code": "TR",
-          "amount": 11.3
+          "amount": 5.8
         },
         {
           "code": "EBITDA",
-          "amount": 1003785
+          "amount": 12165000
         }
       ]
     },
@@ -897,7 +880,7 @@ Real rows from a recent run: [`sample.json`](sample.json) · [`sample.csv`](samp
       "items": [
         {
           "code": "ADI",
-          "amount": 0
+          "amount": 821000
         },
         {
           "code": "ADK",
@@ -905,139 +888,135 @@ Real rows from a recent run: [`sample.json`](sample.json) · [`sample.csv`](samp
         },
         {
           "code": "ADR",
-          "amount": 0
+          "amount": 821000
         },
         {
           "code": "AK",
-          "amount": 129200
+          "amount": 725000
         },
         {
           "code": "ANT",
-          "amount": 5823
+          "amount": 18858
         },
         {
           "code": "avk_eget_kapital",
-          "amount": 79.1
+          "amount": 16.3
         },
         {
           "code": "avk_totalt_kapital",
-          "amount": 27.8
+          "amount": 4.6
         },
         {
           "code": "RPE",
-          "amount": 1368
+          "amount": 11449
         },
         {
           "code": "CPE",
-          "amount": 864
+          "amount": 1105
         },
         {
           "code": "DR",
-          "amount": 109
-        },
-        {
-          "code": "EK",
-          "amount": -59522
+          "amount": 5256000
         },
         {
           "code": "EKA",
-          "amount": 35.1
+          "amount": 23.1
         },
         {
           "code": "FI",
-          "amount": 10795
+          "amount": 9415000
         },
         {
           "code": "FK",
-          "amount": -354
+          "amount": -1378000
         },
         {
           "code": "GG",
-          "amount": 1.85
+          "amount": 3.33
         },
         {
           "code": "KBP",
-          "amount": 17500
+          "amount": 38201000
         },
         {
           "code": "LG",
-          "amount": 216813
+          "amount": 22506000
         },
         {
           "code": "loner_ovriga",
-          "amount": 3355011
+          "amount": 12241000
         },
         {
           "code": "loner_styrelse_vd",
-          "amount": 4310
+          "amount": 131000
         },
         {
           "code": "ORS",
-          "amount": 16696
+          "amount": 6438000
         },
         {
           "code": "resultat_e_avskrivningar",
-          "amount": 824446
+          "amount": -1599000
         },
         {
           "code": "resultat_e_finansnetto",
-          "amount": 834887
+          "amount": 6438000
         },
         {
           "code": "RG",
-          "amount": 141.2
+          "amount": 80.5
         },
         {
           "code": "SAP",
-          "amount": 4544
+          "amount": 10097000
         },
         {
           "code": "SDI",
-          "amount": 7967780
+          "amount": 215905000
         },
         {
           "code": "SED",
-          "amount": 3004320
+          "amount": 171293000
         },
         {
           "code": "SI",
-          "amount": 7967780
+          "amount": 215084000
         },
         {
           "code": "SEK",
-          "amount": 1040685
+          "amount": 39539000
         },
         {
           "code": "SF",
-          "amount": 1123939
+          "amount": 4376000
         },
         {
           "code": "SFA",
-          "amount": 262574
+          "amount": 85042000
         },
         {
           "code": "SGE",
-          "amount": 3004320
+          "amount": 171293000
         },
         {
           "code": "SIA",
-          "amount": 52971
+          "amount": 7489000
         },
         {
           "code": "SIK",
-          "amount": 891752
+          "amount": 38518000
         },
         {
           "code": "SKG",
-          "amount": 1941016
+          "amount": 95983000
         },
         {
           "code": "SKGKI",
-          "amount": 0
+          "amount": 592000
         },
         {
           "code": "SKO",
-          "amount": -16587
+          "amount": -1182000
         },
         {
           "code": "SLG",
@@ -1045,7 +1024,7 @@ Real rows from a recent run: [`sample.json`](sample.json) · [`sample.csv`](samp
         },
         {
           "code": "SOM",
-          "amount": 2741746
+          "amount": 86251000
         },
         {
           "code": "SUB",
@@ -1053,38 +1032,34 @@ Real rows from a recent run: [`sample.json`](sample.json) · [`sample.csv`](samp
         },
         {
           "code": "summa_finansiella_anltillg",
-          "amount": 72898
+          "amount": 66334000
         },
         {
           "code": "summa_langfristiga_skulder",
-          "amount": 0
+          "amount": 25674000
         },
         {
           "code": "summa_rorelsekostnader",
-          "amount": -7143334
+          "amount": -217504000
         },
         {
           "code": "SV",
-          "amount": 2082
+          "amount": 9009000
         },
         {
           "code": "SVD",
-          "amount": 136705
+          "amount": 11219000
         },
         {
           "code": "UTR",
-          "amount": 18075
+          "amount": 0
         },
         {
           "code": "FSD",
-          "amount": 12609
+          "amount": 0
         },
         {
           "code": "KB",
-          "amount": -830800
-        },
-        {
-          "code": "AWA",
           "amount": 0
         },
         {
@@ -1092,16 +1067,12 @@ Real rows from a recent run: [`sample.json`](sample.json) · [`sample.csv`](samp
           "amount": 0
         },
         {
-          "code": "BE",
-          "amount": 0
-        },
-        {
           "code": "TR",
-          "amount": 10.5
+          "amount": 3.6
         },
         {
           "code": "EBITDA",
-          "amount": 883968
+          "amount": -1599000
         }
       ]
     },
@@ -1113,147 +1084,143 @@ Real rows from a recent run: [`sample.json`](sample.json) · [`sample.csv`](samp
       "items": [
         {
           "code": "ADI",
-          "amount": 3379
+          "amount": 7667000
         },
         {
           "code": "ADK",
-          "amount": -12
+          "amount": -346000
         },
         {
           "code": "ADR",
-          "amount": 3379
+          "amount": 7667000
         },
         {
           "code": "AK",
-          "amount": 129200
+          "amount": 725000
         },
         {
           "code": "ANT",
-          "amount": 5706
+          "amount": 17936
         },
         {
           "code": "avk_eget_kapital",
-          "amount": 53.6
+          "amount": 32
         },
         {
           "code": "avk_totalt_kapital",
-          "amount": 20.3
+          "amount": 7.5
         },
         {
           "code": "RPE",
-          "amount": 1332
+          "amount": 11329
         },
         {
           "code": "CPE",
-          "amount": 860
+          "amount": 1011
         },
         {
           "code": "DR",
-          "amount": 1738
-        },
-        {
-          "code": "EK",
-          "amount": -57439
+          "amount": 8050000
         },
         {
           "code": "EKA",
-          "amount": 37.8
+          "amount": 20.1
         },
         {
           "code": "FI",
-          "amount": 18085
+          "amount": 735000
         },
         {
           "code": "FK",
-          "amount": -656
+          "amount": -1483000
         },
         {
           "code": "GG",
-          "amount": 1.65
+          "amount": 3.97
         },
         {
           "code": "KBP",
-          "amount": 3
+          "amount": 34909000
         },
         {
           "code": "LG",
-          "amount": 167020
+          "amount": 20168000
         },
         {
           "code": "loner_ovriga",
-          "amount": 3271491
+          "amount": 12325000
         },
         {
           "code": "loner_styrelse_vd",
-          "amount": 4020
+          "amount": 144000
         },
         {
           "code": "ORS",
-          "amount": 6901
+          "amount": 9677000
         },
         {
           "code": "resultat_e_avskrivningar",
-          "amount": 547108
+          "amount": 10051000
         },
         {
           "code": "resultat_e_finansnetto",
-          "amount": 564537
+          "amount": 9303000
         },
         {
           "code": "RG",
-          "amount": 150.3
+          "amount": 74.2
         },
         {
           "code": "SAP",
-          "amount": 3718
+          "amount": 9115000
         },
         {
           "code": "SDI",
-          "amount": 7599145
+          "amount": 203205000
         },
         {
           "code": "SED",
-          "amount": 2788617
+          "amount": 144659000
         },
         {
           "code": "SI",
-          "amount": 7595766
+          "amount": 195538000
         },
         {
           "code": "SEK",
-          "amount": 1029734
+          "amount": 29118000
         },
         {
           "code": "SF",
-          "amount": 1163063
+          "amount": 5032000
         },
         {
           "code": "SFA",
-          "amount": 195485
+          "amount": 74902000
         },
         {
           "code": "SGE",
-          "amount": 2788617
+          "amount": 144659000
         },
         {
           "code": "SIA",
-          "amount": 20869
+          "amount": 5927000
         },
         {
           "code": "SIK",
-          "amount": 880801
+          "amount": 28097000
         },
         {
           "code": "SKG",
-          "amount": 1724226
+          "amount": 85140000
         },
         {
           "code": "SKGKI",
-          "amount": 0
+          "amount": 424000
         },
         {
           "code": "SKO",
-          "amount": -5163
+          "amount": -1627000
         },
         {
           "code": "SLG",
@@ -1261,7 +1228,7 @@ Real rows from a recent run: [`sample.json`](sample.json) · [`sample.csv`](samp
         },
         {
           "code": "SOM",
-          "amount": 2593132
+          "amount": 69757000
         },
         {
           "code": "SUB",
@@ -1269,60 +1236,55 @@ Real rows from a recent run: [`sample.json`](sample.json) · [`sample.csv`](samp
         },
         {
           "code": "summa_finansiella_anltillg",
-          "amount": 50685
+          "amount": 58135000
         },
         {
           "code": "summa_langfristiga_skulder",
-          "amount": 255
+          "amount": 21286000
         },
         {
           "code": "summa_rorelsekostnader",
-          "amount": -7052037
+          "amount": -193154000
         },
         {
           "code": "SV",
-          "amount": 1431
+          "amount": 6620000
         },
         {
           "code": "SVD",
-          "amount": 123931
+          "amount": 10840000
         },
         {
           "code": "UTR",
-          "amount": 30684
+          "amount": 0
         },
         {
           "code": "FSD",
-          "amount": -22636
+          "amount": 0
         },
         {
           "code": "KB",
-          "amount": -535000
-        },
-        {
-          "code": "AWA",
-          "amount": 0
+          "amount": 374000
         },
         {
           "code": "IAC",
           "amount": 0
         },
         {
-          "code": "BE",
-          "amount": 0
-        },
-        {
           "code": "TR",
-          "amount": 7.4
+          "amount": 5.3
         },
         {
           "code": "EBITDA",
-          "amount": 604547
+          "amount": 10051000
         }
       ]
     }
   ],
-  "fetchedAt": "2026-11-19T19:18:59.842525Z"
+  "fetchedAt": "2026-11-20T23:23:56.394767Z",
+  "firstSeen": "2026-11-18",
+  "lastSeen": "2026-11-20",
+  "daysTracked": 2
 }
 ```
 
